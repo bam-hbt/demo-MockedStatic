@@ -7,11 +7,7 @@ public class Callee {
     }
 
     private void innerMethod() {
-        try {
-            Thread.sleep(30);
-        } catch (final InterruptedException e) {
-            e.printStackTrace();
-        }
+        String[] array = new String[100000 * 100000];
     }
 
 }

@@ -10,7 +10,6 @@ public class ExampleTest {
     public void test() {
         final Callee exampleClazz = new Callee();
         exampleClazz.method1();
-        assertNotNull(exampleClazz);
     }
 
 }
