@@ -2,17 +2,12 @@ package de.dagere.peass;
 
 public class Callee {
 
-    protected void method1() {
-        innerMethod();
+    protected String method1() {
+        return innerMethod();
     }
 
-    private void innerMethod() {
-        try {
-            Thread.sleep(30);
-        } catch (final InterruptedException e) {
-            e.printStackTrace();
-        }
-        String[] array = new String[100000 * 100000];
+    public static String innerMethod() {
+           return  Station.getStation();
     }
 
 }
