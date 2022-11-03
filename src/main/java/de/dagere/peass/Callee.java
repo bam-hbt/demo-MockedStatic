@@ -7,7 +7,12 @@ public class Callee {
     }
 
     public static String innerMethod() {
-           return  Station.getStation();
+        try {
+            Thread.sleep(50);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return  Station.getStation();
     }
 
 }
