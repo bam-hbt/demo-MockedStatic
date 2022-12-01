@@ -4,6 +4,7 @@ public class Station {
 
 
     public static String getStation() {
+
         return "inStation";
     }
 
